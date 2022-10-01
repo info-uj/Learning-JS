@@ -29,9 +29,18 @@ alert(varName);
 
 `const` has all the awesome features that let has, with the added bonus that variables declared using `const` are read-only. They are a constant value, which means that once a variable is assigned with const, it cannot be reassigned:
 
-### var and const keyword
+### `var` and `const` keyword
 
-### let and const keyword
+```JS
+var vName = "abc";
+var vName = "def"; // re-declaration is allowed
+console.log(vName);
+const F_NAME="Abc";
+const F_NAME="def"; // re-declaration not allowed generate an error
+F_NAME="Def"; // re-initialization also not allowed generate an error
+```
+
+### `let` and `const` keyword
 
 ```JS
 let fCC = "freeCodeCamp"; 
@@ -50,7 +59,7 @@ console.log(FCC);
 
 ## Mutable vs Immutable
 
-## Note On Array
+## Notes On Array
 
 There shouldn't be any spaces between the array name and the square brackets, like `array [0]`. Although JavaScript is able to process this correctly, this may confuse other programmers reading your code.
 
@@ -75,11 +84,11 @@ function funName(parameter-list){
 
 Variables which are declared without the let or const keywords are automatically created in the global scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with let or const.
 
-## `==` and `===`
+## `==` vs `===`
+
+## `!=` vs `!==`
 
 ## `typeof`
-
-## `!=` and `!==`
 
 ## object
 
@@ -88,7 +97,13 @@ Objects are similar to arrays, except that instead of using indexes to access an
 Syntax:
 
 ```JS
-//full fill later
+const | var | let objectName={
+  "propName_1":value1,
+  "propName_2":value2,
+  "propName_3":value3
+  ....
+  ....
+}
 ```
 
 ```JS
@@ -106,7 +121,7 @@ const anotherObject = {
 };
 ```
 
-Note:
+**Note:**
 
 - can also use numbers as properties.
 - can even omit the quotes for single-word string properties
@@ -229,5 +244,7 @@ ourPets[1].names[0];
 ## Resource
 
 - [FreeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures)
-- [Udemy]()
-- [Youtube]()
+- youtube
+  - [CodeWithHarry](https://www.youtube.com/playlist?list=PLu0W_9lII9ajyk081To1Cbt2eI5913SsL)
+  - [FreeCodeCamp](https://www.youtube.com/watch?v=PkZNo7MFNFg)
+  - [JS by Telusko](https://www.youtube.com/playlist?list=PLsyeobzWxl7rrvgG7MLNIMSTzVCDZZcT4)
