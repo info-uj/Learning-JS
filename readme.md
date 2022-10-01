@@ -4,11 +4,11 @@ self taking notes on JS while learning.
 The Point I noted is just to track them.
 This is not a detailed note Java-Script.
 
-## let keyword
+## `let` keyword
 
 This `let` keyword was introduced in ES6, a major update to JavaScript.
 
-### var and let keyword
+### `var` and let keyword
 
 with `var` variable can be redeclare 
 `let` keyword prevent this, it shows errors.
@@ -25,7 +25,7 @@ let varName="Def"
 alert(varName);
 ```
 
-## const keyword
+## `const` keyword
 
 `const` has all the awesome features that let has, with the added bonus that variables declared using `const` are read-only. They are a constant value, which means that once a variable is assigned with const, it cannot be reassigned:
 
@@ -45,8 +45,8 @@ FCC = "is cool!";  //it's now allowed, will show error
 console.log(FCC); 
 ```
 
-Note:
-It is common for developers to use uppercase variable identifiers for immutable values and lowercase or camelCase for mutable values (objects and arrays).
+**Note:**
+*It is common for developers to use uppercase variable identifiers for immutable values and lowercase or camelCase for mutable values (objects and arrays).*
 
 ## Mutable vs Immutable
 
