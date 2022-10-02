@@ -241,6 +241,50 @@ ourPets[0].names[1];
 ourPets[1].names[0];
 ```
 
+## Generating Random Numbers within range
+
+*Math.random() gives us a random number between 0 and 1.*
+
+But we don’t want a random decimal; we want a random number. We can get that by multiplying our Math.random() result by the size of the range. For example, if we want a random number between 0 and 10, we need to multiply by 10. A result of 0.4 would become 4. If we want random numbers from 7 to 11, that is 5 possible numbers (7, 8, 9, 10, 11).
+This is where we get Math.random() * (max - min + 1)
+
+We don’t want decimal numbers though, we want whole numbers. Math.floor() just chops off the decimal. 3.14159 becomes 3.
+That’s where we get Math.floor(Math.random() * (max - min + 1)).
+
+Now we’re getting a number from 0 to whatever our range size was. If we wanted a number from 7 to 11, it’s a random number from 0 to 5. To make that be a number from 7 to 11, we just need to add 7 to whatever number we got. 7 is our minimum value.
+This leads us to Math.floor(Math.random() * (max - min + 1)) + min
+
+```js
+Math.floor(Math.random() * (max - min + 1)) + min;
+
+// max = 15; min = 5
+Math.floor(Math.random() * (15 - 5 + 1)) + 5;
+Math.floor(0 * (15 - 5 + 1)) + 5;
+Math.floor(0) + 5;
+0 + 5;
+5
+// max = 15; min = 5
+Math.floor(Math.random() * (15 - 5 + 1)) + 5;
+Math.floor(0.9999999999 * (15 - 5 + 1)) + 5;
+Math.floor(0.9999999999 * (11)) + 5;
+Math.floor(10.9999999989) + 5;
+10 + 5;
+15
+```
+
+## conversion from one type to another
+
+- paseInt(string); parses a string and returns an integer
+- parseInt(string, radix); (radix = base)
+ The parseInt() function parses a string and returns an integer. It takes a second argument for the radix, which specifies the base of the number in the string. The radix can be an integer between 2 and 36. If the first character in the string can't be converted into a number, then it returns NaN.
+- 
+
+Example:
+
+```JS
+
+```
+
 ## Resource
 
 - [FreeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures)
