@@ -10,7 +10,7 @@ This `let` keyword was introduced in ES6, a major update to JavaScript.
 
 ### `var` and let keyword
 
-with `var` variable can be redeclare 
+with `var` variable can be redeclare
 `let` keyword prevent this, it shows errors.
 
 ```JS
@@ -43,15 +43,37 @@ F_NAME="Def"; // re-initialization also not allowed generate an error
 ### `let` and `const` keyword
 
 ```JS
-let fCC = "freeCodeCamp"; 
+let fCC = "freeCodeCamp";
 fact = "is cool!";  //it's allowed
-console.log(fCC); 
+console.log(fCC);
 ```
 
 ```JS
-const FCC = "freeCodeCamp"; 
+const FCC = "freeCodeCamp";
 FCC = "is cool!";  //it's now allowed, will show error
 console.log(FCC); 
+```
+
+## Output in JS
+
+- JS doesn't have a built-in print function.
+- There are following ways to display data in js
+  - alert box (windows.alert(message))
+  - prompt box (windows.prompt()) show message and in return wants an input.
+  - HTML Output Using document.write()
+  - HTML element using innerHTML
+  - the browser console. console.log()
+
+### alert()
+
+Example
+
+```JS
+alert("say hello to JS");
+prompt("Say HI");
+document.write("It time to introduce yourself with JS");
+element.innerHTML="It's time to introduce yourself with JS";
+console.log("Say HI to JS");
 ```
 
 **Note:**
@@ -285,6 +307,24 @@ Example:
 
 ```
 
+
+## Events
+
+basic events
+
+- `onclick()`
+- `onload()`
+- `onresize()`
+- many more.
+
+syntax: `<tag event=action></tag>`
+Example:
+`<div onclick="message()"></div>`
+
+- Mouse Events
+- Keyboard Events
+- Frame Events
+- And many More
 ## Resource
 
 - [FreeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures)
@@ -292,3 +332,4 @@ Example:
   - [CodeWithHarry](https://www.youtube.com/playlist?list=PLu0W_9lII9ajyk081To1Cbt2eI5913SsL)
   - [FreeCodeCamp](https://www.youtube.com/watch?v=PkZNo7MFNFg)
   - [JS by Telusko](https://www.youtube.com/playlist?list=PLsyeobzWxl7rrvgG7MLNIMSTzVCDZZcT4)
+- [coursera](https://www.coursera.org/learn/javascript/home/welcome)
